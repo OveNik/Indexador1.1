@@ -1,0 +1,1419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INICIAL</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
+        #imgbanner-container {
+            top: 0;
+            left: 20px;
+            width: 450px;
+            height: 120px;
+            background-color :rgb(41, 39, 39);
+            position: absolute;
+        }
+        #imgbanner{
+            top: 0;
+            left: 0px;
+            width: 450px;
+            height: 120px;
+            background-color :rgb(41, 39, 39);
+            position: absolute;
+        }
+
+        #principal {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color :rgb(41, 39, 39);
+        }
+        #menu {
+            margin-top: 120px;
+            margin-left: 20px;
+            width: 810px;
+            height: 70px;
+            background-color: rgb(46, 43, 43);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            border: 3px solid white;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px white;
+            z-index: 0;
+        }
+        #boton1,#boton2,#boton3,#boton4,#boton5
+         {
+            width: 150px;
+            height: 50px;
+            background-color: rgb(46, 43, 43);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            z-index: 0;
+            border: 3px solid white;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px white;
+            z-index: 0;
+            position: absolute;
+            text-align: center;
+        color: white;
+        overflow: hidden;
+        }
+        #boton1
+         {
+            margin-top: 5px;
+            margin-left: 5px;
+        }
+        #boton2
+         {
+            margin-top: 5px;
+            margin-left: 165px;
+        }
+        #boton3
+         {
+            margin-top: 5px;
+            margin-left: 325px;
+        }
+        #boton4
+         {
+            margin-top: 5px;
+            margin-left: 485px;
+        }
+        #boton5
+         {
+            margin-top: 5px;
+            margin-left: 645px;
+        }
+        [id^="semanal"] {
+            margin-top: 10px;
+            margin-left: 20px;
+            width: 810px;
+            height: 320px;
+            background-color: rgb(46, 43, 43);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            z-index: 0;
+            border: 3px solid white;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px white;
+            }
+            #semanal6 { height: 460px; }
+            #semanalnotas{
+            margin-top: 670px;
+            margin-left: 20px;
+            width: 1270px;
+            height: 200px;
+            position: absolute;
+            }
+
+
+            #gestorcontrasena,#nota4 {
+            margin-top: 10px;
+            margin-left: 20px;
+            width: 810px;
+            height: 100px;
+            background-color: rgb(46, 43, 43);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            z-index: 0;
+            border: 3px solid white;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px white;
+            }
+            #nota4 {width: 810px;  height: 160px;}
+            
+            #mostnombre,#mostusuario,#mostcontra {
+            margin-top: 5px;
+            margin-left: 10px;
+            width: 300px;
+            height: 20px;
+            background-color: rgb(46, 43, 43);
+            z-index: 0;
+            color:white;
+            position: absolute;
+            }
+
+            #mostnombre { margin-top: 30px;  margin-left: 50px;}
+            #mostusuario{ margin-top: 60px;  margin-left: 50px;}
+            #mostcontra { margin-top: 90px;  margin-left: 50px;}
+
+            #inputnombre1,#inputusuario1,#inputcontra1 {
+            margin-top: 30px;
+            margin-left: 10px;
+            width: 400px;
+            height: 20px;
+            background-color: rgb(46, 43, 43);
+            z-index: 0;
+            color:white;
+            position: absolute;
+            }
+            #inputnombre1   { margin-top: 30px;  margin-left: 300px;}
+            #inputusuario1  { margin-top: 60px;  margin-left: 300px;}
+            #inputcontra1   { margin-top: 90px;  margin-left: 300px;}
+
+            #buttonnota4 {
+            margin-top: 120px;
+            margin-left: 300px;
+            width: 410px;
+            height: 30px;
+            background-color: rgb(9, 71, 129);
+            z-index: 0;
+            color:white;
+            position: absolute;
+            }
+
+            #gestorcontrasena1 {
+            margin-top: 10px;
+            margin-left: 20px;
+            width: 810px;
+            height: 320px;
+            background-color: rgb(46, 43, 43);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            z-index: 0;
+            border: 3px solid white;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px white;
+            }
+
+
+        [id^="espacio"] {
+        width: 390px;
+        height: 50px;
+        background-color: rgb(41, 41, 38);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        z-index: 0;
+        border: 3px solid white;
+        border-radius: 10px;
+        box-shadow: 2px 2px 10px white;
+        position: absolute;
+        text-align: center;
+        color: white;
+        overflow: hidden;
+        margin-left: 5px; /* Margen izquierdo común para todos */
+        }
+
+        #espacio1 { margin-top: 5px; margin-left:5px;}
+        #espacio2 { margin-top: 5px; margin-left:410px;}
+        #espacio3 { margin-top: 65px; margin-left:5px;}
+        #espacio4 { margin-top: 65px; margin-left:410px;}
+        #espacio5 { margin-top: 130px; margin-left:5px;}
+        #espacio6 { margin-top: 130px; margin-left:410px;}
+        #espacio7 { margin-top: 195px; margin-left:5px;}
+        #espacio8 { margin-top: 195px; margin-left:410px;}
+        #espacio9 { margin-top: 260px; margin-left:5px;}
+        #espacio10 { margin-top: 260px; margin-left:410px;}
+        #espacio11 { margin-top: 5px; margin-left: 5px; }
+        #espacio12 { margin-top: 5px; margin-left: 410px; }
+        #espacio13 { margin-top: 65px; margin-left: 5px; }
+        #espacio14 { margin-top: 65px; margin-left: 410px; }
+        #espacio15 { margin-top: 130px; margin-left: 5px; }
+        #espacio16 { margin-top: 130px; margin-left: 410px; }
+        #espacio17 { margin-top: 195px; margin-left: 5px; }
+        #espacio18 { margin-top: 195px; margin-left: 410px; }
+        #espacio19 { margin-top: 260px; margin-left: 5px; }
+        #espacio20 { margin-top: 260px; margin-left: 410px; }
+        #espacio21 { margin-top: 5px; margin-left: 5px; }
+        #espacio22 { margin-top: 5px; margin-left: 410px; }
+        #espacio23 { margin-top: 65px; margin-left: 5px; }
+        #espacio24 { margin-top: 65px; margin-left: 410px; }
+        #espacio25 { margin-top: 130px; margin-left: 5px; }
+        #espacio26 { margin-top: 130px; margin-left: 410px; }
+        #espacio27 { margin-top: 195px; margin-left: 5px; }
+        #espacio28 { margin-top: 195px; margin-left: 410px; }
+        #espacio29 { margin-top: 260px; margin-left: 5px; }
+        #espacio30 { margin-top: 260px; margin-left: 410px; }
+        #espacio31 { margin-top: 5px; margin-left: 5px; }
+        #espacio32 { margin-top: 5px; margin-left: 410px; }
+        #espacio33 { margin-top: 65px; margin-left: 5px; }
+        #espacio34 { margin-top: 65px; margin-left: 410px; }
+        #espacio35 { margin-top: 130px; margin-left: 5px; }
+        #espacio36 { margin-top: 130px; margin-left: 410px; }
+        #espacio37 { margin-top: 195px; margin-left: 5px; }
+        #espacio38 { margin-top: 195px; margin-left: 410px; }
+        #espacio39 { margin-top: 260px; margin-left: 5px; }
+        #espacio40 { margin-top: 260px; margin-left: 410px; }
+        #espacio41 { margin-top: 5px; margin-left: 5px; }
+        #espacio42 { margin-top: 5px; margin-left: 410px; }
+        #espacio43 { margin-top: 65px; margin-left: 5px; }
+        #espacio44 { margin-top: 65px; margin-left: 410px; }
+        #espacio45 { margin-top: 130px; margin-left: 5px; }
+        #espacio46 { margin-top: 130px; margin-left: 410px; }
+        #espacio47 { margin-top: 195px; margin-left: 5px; }
+        #espacio48 { margin-top: 195px; margin-left: 410px; }
+        #espacio49 { margin-top: 260px; margin-left: 5px; }
+        #espacio50 { margin-top: 260px; margin-left: 410px; }
+        #espacio51 { margin-top: 5px; margin-left: 5px; }
+        #espacio52 { margin-top: 5px; margin-left: 410px; }
+        #espacio53 { margin-top: 65px; margin-left: 5px; }
+        #espacio54 { margin-top: 65px; margin-left: 410px; }
+        #espacio55 { margin-top: 130px; margin-left: 5px; }
+        #espacio56 { margin-top: 130px; margin-left: 410px; }
+        #espacio57 { margin-top: 195px; margin-left: 5px; }
+        #espacio58 { margin-top: 195px; margin-left: 410px; }
+        #espacio59 { margin-top: 260px; margin-left: 5px; }
+        #espacio60 { margin-top: 260px; margin-left: 410px; }
+        #espacio61 { margin-top: 325px; margin-left: 5px; }
+        #espacio62 { margin-top: 325px; margin-left: 410px; }
+        #espacio63 { margin-top: 390px; margin-left: 5px; }
+        #espacio64 { margin-top: 390px; margin-left: 410px; }
+
+        #espacio65,#espacio66,#espacio67,#espacio68,#espacio69,#espacio70 {
+        width: 200px;
+        height:130px;
+        z-index: 1;
+        position: absolute;
+        }
+
+        #espacio65 { margin-top: 5px; margin-left: 5px; }
+        #espacio66 { margin-top: 5px; margin-left: 215px;  }
+        #espacio67 { margin-top: 5px; margin-left: 425px; }
+        #espacio68 { margin-top: 5px; margin-left: 635px; }
+        #espacio69 { margin-top: 5px; margin-left: 845px; }
+        #espacio70 { margin-top: 5px; margin-left: 1055px; }
+
+        #inputnota3 {
+        width: 650px;
+        height:30px;
+        z-index: 1;
+        position: absolute;
+        margin-top: 150px; 
+        margin-left: 20px;
+        }
+
+        #nota,#nota1 {
+            margin-top: 20px;
+            margin-left: 290px;
+            width: 300px;
+            height: 300px;
+            background-color: rgb(46, 43, 43);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            border: 3px solid white;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px white;
+            position: absolute;
+            z-index: 3;
+            
+        }
+        #nota3 {
+            margin-top: 5px;
+            margin-left: 470px;
+            width: 210px;
+            height: 100px;
+            background-color: rgb(46, 43, 43);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            border: 3px solid white;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px white;
+            position: absolute;
+            z-index: 3;
+            
+        }
+        #button1{
+            margin-top: 5px;
+            margin-left: 25px;
+            width: 250px;
+            height: 50px;
+            background-color: rgb(9, 71, 129);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            border: 3px solid white;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px white;
+            position: absolute;
+            z-index: 3;
+            }
+            #button2{
+            margin-top: 70px;
+            margin-left: 25px;
+            width: 250px;
+            height: 50px;
+            background-color: rgb(9, 71, 129);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            border: 3px solid white;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px white;
+            position: absolute;
+            z-index: 3;
+            }
+            #Inputnombre{
+            margin-top: 5px;
+            margin-left: 20px;
+            width: 250px;
+            height: 50px;
+            background-color: rgb(46, 43, 43);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            border: 3px solid white;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px white;
+            position: absolute;
+            z-index: 3;
+            }
+            #Inputlink{
+            margin-top: 70px;
+            margin-left: 20px;
+            width: 250px;
+            height: 50px;
+            background-color: rgb(46, 43, 43);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            border: 3px solid white;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px white;
+            position: absolute;
+            z-index: 3;
+            }
+            #button3{
+            margin-top: 150px;
+            margin-left: 20px;
+            width: 250px;
+            height: 50px;
+            background-color: rgb(197, 119, 17);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            border: 3px solid white;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px white;
+            position: absolute;
+            z-index: 3;
+            }
+            #buttonnota3{
+            margin-top: 5px;
+            margin-left: 10px;
+            width: 190px;
+            height: 40px;
+            background-color: rgb(9, 71, 129);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            border: 3px solid white;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px white;
+            position: absolute;
+            z-index: 3;
+            }
+            #inputboton3{
+            margin-top: 50px;
+            margin-left: 10px;
+            width: 180px;
+            height: 30px;
+            background-color: rgb(88, 88, 85);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            border: 3px solid white;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px white;
+            position: absolute;
+            z-index: 3;
+            }
+
+            [id^="nombre"] {
+            /* Estilos comunes para todos los elementos cuyo id empieza con "nombre" */
+            margin-top: 15px;
+            font-size: 20px;
+            }
+            [id^="botontexto"] {
+            /* Estilos comunes para todos los elementos cuyo id empieza con "nombre" */
+            margin-top: 15px;
+            }
+            [id^="espacio"]:hover {
+            /* Estilos comunes para todos los elementos cuyo id empieza con "nombre" */
+            transform: scale(1.03);
+            }
+
+            #titulogestor {
+            margin-top: 10px;
+            margin-left: 220px;
+            width: 400px;
+            height: 30px;
+            background-color: rgba(88, 88, 85, 0);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: absolute;
+            color: white;
+            z-index: 3;
+            font-size: 30px;
+            }
+            #buttongestor { 
+            margin-top: 51px;
+            margin-left: 135px;
+            width: 250px;
+            height: 35px;
+            background-color: rgb(9, 71, 129);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            border: 3px solid white;
+            color: white;
+            border-radius: 10px;
+            position: absolute;
+            z-index: 3;
+            }
+            #inputgestor  {
+            margin-top: 50px;
+            margin-left: 400px;
+            width: 250px;
+            height: 30px;
+            background-color: rgb(255, 255, 255);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            border: 3px solid rgb(15, 15, 15);
+            border-radius: 10px;
+            position: absolute;
+            z-index: 3;
+            }
+            #calendario  {
+            margin-top: 10px;
+            margin-left: 850px;
+            width: 450px;
+            height: 50px;
+            background-color: rgba(88, 88, 85, 0);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            border: 3px solid white;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px white;
+            position: absolute;
+            z-index: 3;
+            }
+            #dianum  {
+            margin-top: 10px;
+            margin-left: 160px;
+            width: 280px;
+            height: 85px;
+            background-color: rgba(88, 88, 85, 0);
+            background-size: cover;
+            position: absolute;
+            font-size: 30px;
+            color: white;
+            z-index: 3;
+            }
+            #dianom  {
+            margin-top: 5px;
+            margin-left: 10px;
+            width: 150px;
+            height: 85px;
+            background-color: rgba(88, 88, 85, 0);
+            background-size: cover;
+            position: absolute;
+            font-size: 30px;
+            color: white;
+            z-index: 3;
+            }
+
+            #agenda  {
+            margin-top: 80px;
+            margin-left: 850px;
+            width: 450px;
+            height: 580px;
+            background-color: rgba(88, 88, 85, 0);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            border: 3px solid white;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px white;
+            position: absolute;
+            z-index: 3;
+            }
+            [id^="item"] {
+                width: 420px;
+                height: 40px;
+                background-color: rgb(41, 41, 38);
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                z-index: 0;
+                border: 3px solid white;
+                border-radius: 10px;
+                box-shadow: 2px 2px 10px white;
+                position: absolute;
+                text-align: center;
+                color: white;
+                overflow: hidden;
+                margin-left: 5px; /* Margen izquierdo común para todos */
+            }
+            #item1 {margin-top: 5px; margin-left: 10px;}
+            #item2 {margin-top: 55px; margin-left: 10px;}
+            #item3 {margin-top: 105px; margin-left: 10px;}
+            #item4 {margin-top:155px; margin-left: 10px;}
+            #item5 {margin-top: 205px; margin-left: 10px;}
+            #item6 {margin-top: 255px; margin-left: 10px;}
+            #item7 {margin-top: 305px; margin-left: 10px;}
+            #item8 {margin-top: 355px; margin-left: 10px;}
+            #item9 {margin-top: 405px; margin-left: 10px;}
+            #item10 {margin-top: 455px; margin-left: 10px;}
+
+
+
+            [id^="dias"] {
+                width: 40px;
+                height: 30px;
+                background-color: rgb(41, 41, 38);
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                z-index: 0;
+                border: 2px solid white;
+                border-radius: 10px;
+                position: absolute;
+                text-align: center;
+                color: white;
+                overflow: hidden;
+                margin-left: 5px; /* Margen izquierdo común para todos */
+                margin-top: 3px; margin-left: 260px;
+            }
+
+
+
+            [id^="mes"] {
+                width: 40px;
+                height: 30px;
+                background-color: rgb(41, 41, 38);
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                z-index: 0;
+                border: 2px solid white;
+                border-radius: 10px;
+                position: absolute;
+                text-align: center;
+                color: white;
+                overflow: hidden;
+                margin-left: 5px; /* Margen izquierdo común para todos */
+                margin-top: 3px; margin-left: 310px;}
+
+            [id^="an"] {
+                width: 40px;
+                height: 30px;
+                background-color: rgb(41, 41, 38);
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                z-index: 0;
+                border: 2px solid white;
+                border-radius: 10px;
+                position: absolute;
+                text-align: center;
+                color: white;
+                overflow: hidden;
+                margin-left: 5px; /* Margen izquierdo común para todos */
+                margin-top: 3px; margin-left: 360px;}
+
+                #botonverde,#botonamarillo,#botonrojo {
+                width: 80px;
+                height: 40px;
+                background-color: rgb(24, 100, 30);
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                z-index: 3;
+                border: 2px solid white;
+                border-radius: 10px;
+                position: absolute;
+                overflow: hidden;}
+                #botonverde{
+                margin-top: 150px; 
+                margin-left: 700px;
+                background-color: rgb(16, 70, 21);
+                }
+                #botonamarillo{
+                margin-top: 150px; 
+                margin-left: 800px;
+                background-color: rgb(108, 114, 31);
+                }
+                #botonrojo{
+                margin-top: 150px; 
+                margin-left: 900px;
+                background-color: rgb(65, 16, 16);
+                }
+                
+                #item11{
+                width: 400px;
+                height: 40px;
+                background-color: rgb(24, 100, 30);
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                z-index: 3;
+                border: 2px solid white;
+                border-radius: 10px;
+                position: absolute;
+                overflow: hidden;
+                margin-top: 520px; 
+                margin-left: 15px;
+                }
+                #inputnota4{
+                width: 200px;
+                height: 20px;
+                background-color: rgb(24, 100, 30);
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                z-index: 3;
+                border: 2px solid white;
+                border-radius: 10px;
+                margin-top: 5px; 
+                margin-left: 10px;
+                }
+                #inputdia{
+                width: 20px;
+                height: 20px;
+                margin-top: 5px; 
+                margin-left: 25px;
+                background-color: rgb(16, 70, 21);
+                }
+                #inputmes{
+                width: 20px;
+                height: 20px;
+                margin-top: 5px; 
+                margin-left: 10px;
+                background-color: rgb(108, 114, 31);
+                }
+                #inputanio{
+                width: 20px;
+                height: 20px;
+                margin-top: 5px; 
+                margin-left: 10px;
+                background-color: rgb(65, 16, 16);
+                }
+
+                [id^="note"] {
+                width: 240px;
+                height: 30px;
+                background-color: rgba(41, 41, 38, 0);
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                z-index: 0;
+                position: absolute;
+                text-align: center;
+                color: white;
+                overflow: hidden;
+                margin-left: -10px; /* Margen izquierdo común para todos */
+                margin-top: 10px;}
+
+
+
+    </style>
+</head>
+
+<body>
+
+  <div id="principal">
+        <div id="imgbanner-container">
+            <img src="LOGO.png" alt="Banner.Image" id="imgbanner">
+        </div>
+        <div id="nota3">
+            <button id="buttonnota3" onclick="cambiarbotonmenu()">CAMBIAR BOTON</button>
+            <input type="text" id="inputboton3" placeholder="El nombre...">
+        </div>
+        <div id="menu">
+            <div id="boton1" onclick="menu(1)">
+                <div id="botontexto1" >DISPONIBLE</div>
+            </div>
+            <div id="boton2" onclick="menu(2)">
+                <div id="botontexto2" >DISPONIBLE</div>
+            </div>
+            <div id="boton3" onclick="menu(3)">
+                <div id="botontexto3" >DISPONIBLE</div>
+            </div>
+            <div id="boton4" onclick="menu(4)">
+                <div id="botontexto4" >DISPONIBLE</div>
+            </div>
+            <div id="boton5" onclick="menu(5)">
+                <div id="botontexto5" >DISPONIBLE</div>
+            </div>
+        </div>
+        <div id="nota">
+            <button id="button1" onclick="IRALINK()">IR AL LINK</button>
+            <button id="button2" onclick="MODIFICAR()">MODIFICAR</button>
+        </div>
+        <div id="nota1">
+            <input type="text" id="Inputnombre" placeholder="El nombre...">
+            <input type="text" id="Inputlink" placeholder="El link...">
+            <button id="button3" onclick="guardarEnVariable()">Guardar mi nota</button>
+            </div>
+            <div id="nota4">
+                <div id="mostnombre" >NOMBRE</div>
+                <div id="mostusuario" >USUARIO</div>
+                <div id="mostcontra" >CONTRASEÑA</div>
+                <input type="text" id="inputnombre1" placeholder="CAMBIAR ETIQUETA...">
+                <input type="text" id="inputusuario1" placeholder="CAMBIAR USUARIO...">      
+                <input type="text" id="inputcontra1" placeholder="CAMBIAR CONTRASEÑA..">
+                <button id="buttonnota4" onclick="cambiar1()">CAMBIAR</button>
+            </div>
+
+        <div id="semanal">
+                <div id="espacio1" onclick="alertanota(1)">
+                    <div id="nombre1">DISPONIBLE</div>
+                </div>
+                <div id="espacio2" onclick="alertanota(2)">
+                    <div id="nombre2">DISPONIBLE</div>
+                </div>
+                <div id="espacio3" onclick="alertanota(3)">
+                    <div id="nombre3">DISPONIBLE</div>
+                </div>
+                <div id="espacio4" onclick="alertanota(4)">
+                    <div id="nombre4">DISPONIBLE</div>
+                </div>
+                <div id="espacio5" onclick="alertanota(5)">
+                    <div id="nombre5">DISPONIBLE</div>
+                </div>
+                <div id="espacio6" onclick="alertanota(6)">
+                    <div id="nombre6">DISPONIBLE</div>
+                </div>
+                <div id="espacio7" onclick="alertanota(7)">
+                    <div id="nombre7">DISPONIBLE</div>
+                </div>
+                <div id="espacio8" onclick="alertanota(8)">
+                    <div id="nombre8">DISPONIBLE</div>
+                </div>
+                <div id="espacio9" onclick="alertanota(9)">
+                    <div id="nombre9">DISPONIBLE</div>
+                </div>
+                <div id="espacio10" onclick="alertanota(10)">
+                    <div id="nombre10">DISPONIBLE</div>
+                </div>
+        </div>
+
+
+            <div id="semanal2">
+            <div id="espacio11" onclick="alertanota(11)">
+                <div id="nombre11">DISPONIBLE</div>
+            </div>
+            <div id="espacio12" onclick="alertanota(12)">
+                <div id="nombre12">DISPONIBLE</div>
+            </div>
+            <div id="espacio13" onclick="alertanota(13)">
+                <div id="nombre13">DISPONIBLE</div>
+            </div>
+            <div id="espacio14" onclick="alertanota(14)">
+                <div id="nombre14">DISPONIBLE</div>
+            </div>
+            <div id="espacio15" onclick="alertanota(15)">
+                <div id="nombre15">DISPONIBLE</div>
+            </div>
+            <div id="espacio16" onclick="alertanota(16)">
+                <div id="nombre16">DISPONIBLE</div>
+            </div>
+            <div id="espacio17" onclick="alertanota(17)">
+                <div id="nombre17">DISPONIBLE</div>
+            </div>
+            <div id="espacio18" onclick="alertanota(18)">
+                <div id="nombre18">DISPONIBLE</div>
+            </div>
+            <div id="espacio19" onclick="alertanota(19)">
+                <div id="nombre19">DISPONIBLE</div>
+            </div>
+            <div id="espacio20" onclick="alertanota(20)">
+                <div id="nombre20">DISPONIBLE</div>
+            </div>
+        </div>
+        <div id="semanal3">
+            <div id="espacio21" onclick="alertanota(21)">
+                <div id="nombre21">DISPONIBLE</div>
+            </div>
+            <div id="espacio22" onclick="alertanota(22)">
+                <div id="nombre22">DISPONIBLE</div>
+            </div>
+            <div id="espacio23" onclick="alertanota(23)">
+                <div id="nombre23">DISPONIBLE</div>
+            </div>
+            <div id="espacio24" onclick="alertanota(24)">
+                <div id="nombre24">DISPONIBLE</div>
+            </div>
+            <div id="espacio25" onclick="alertanota(25)">
+                <div id="nombre25">DISPONIBLE</div>
+            </div>
+            <div id="espacio26" onclick="alertanota(26)">
+                <div id="nombre26">DISPONIBLE</div>
+            </div>
+            <div id="espacio27" onclick="alertanota(27)">
+                <div id="nombre27">DISPONIBLE</div>
+            </div>
+            <div id="espacio28" onclick="alertanota(28)">
+                <div id="nombre28">DISPONIBLE</div>
+            </div>
+            <div id="espacio29" onclick="alertanota(29)">
+                <div id="nombre29">DISPONIBLE</div>
+            </div>
+            <div id="espacio30" onclick="alertanota(30)">
+                <div id="nombre30">DISPONIBLE</div>
+            </div>
+        </div>
+        <div id="semanal4">
+            <div id="espacio31" onclick="alertanota(31)">
+                <div id="nombre31">DISPONIBLE</div>
+            </div>
+            <div id="espacio32" onclick="alertanota(32)">
+                <div id="nombre32">DISPONIBLE</div>
+            </div>
+            <div id="espacio33" onclick="alertanota(33)">
+                <div id="nombre33">DISPONIBLE</div>
+            </div>
+            <div id="espacio34" onclick="alertanota(34)">
+                <div id="nombre34">DISPONIBLE</div>
+            </div>
+            <div id="espacio35" onclick="alertanota(35)">
+                <div id="nombre35">DISPONIBLE</div>
+            </div>
+            <div id="espacio36" onclick="alertanota(36)">
+                <div id="nombre36">DISPONIBLE</div>
+            </div>
+            <div id="espacio37" onclick="alertanota(37)">
+                <div id="nombre37">DISPONIBLE</div>
+            </div>
+            <div id="espacio38" onclick="alertanota(38)">
+                <div id="nombre38">DISPONIBLE</div>
+            </div>
+            <div id="espacio39" onclick="alertanota(39)">
+                <div id="nombre39">DISPONIBLE</div>
+            </div>
+            <div id="espacio40" onclick="alertanota(40)">
+                <div id="nombre40">DISPONIBLE</div>
+            </div>
+        </div>
+        <div id="semanal5">
+            <div id="espacio41" onclick="alertanota(41)">
+                <div id="nombre41">DISPONIBLE</div>
+            </div>
+            <div id="espacio42" onclick="alertanota(42)">
+                <div id="nombre42">DISPONIBLE</div>
+            </div>
+            <div id="espacio43" onclick="alertanota(43)">
+                <div id="nombre43">DISPONIBLE</div>
+            </div>
+            <div id="espacio44" onclick="alertanota(44)">
+                <div id="nombre44">DISPONIBLE</div>
+            </div>
+            <div id="espacio45" onclick="alertanota(45)">
+                <div id="nombre45">DISPONIBLE</div>
+            </div>
+            <div id="espacio46" onclick="alertanota(46)">
+                <div id="nombre46">DISPONIBLE</div>
+            </div>
+            <div id="espacio47" onclick="alertanota(47)">
+                <div id="nombre47">DISPONIBLE</div>
+            </div>
+            <div id="espacio48" onclick="alertanota(48)">
+                <div id="nombre48">DISPONIBLE</div>
+            </div>
+            <div id="espacio49" onclick="alertanota(49)">
+                <div id="nombre49">DISPONIBLE</div>
+            </div>
+            <div id="espacio50" onclick="alertanota(50)">
+                <div id="nombre50">DISPONIBLE</div>
+            </div>
+        </div>
+        <div id="gestorcontrasena">
+            <div id="titulogestor">GESTOR DE CONTRASEÑAS</div>
+            <button id="buttongestor" onclick="ABRIRGESTOR()">ABRIR GESTOR</button>
+            <input type="text" id="inputgestor" placeholder="CONTRASEÑA">
+        </div>
+        <div id="semanal6">
+            <div id="espacio51" onclick="notacontra(51)">
+                <div id="nombre51">DISPONIBLE</div>
+            </div>
+            <div id="espacio52" onclick="notacontra(52)">
+                <div id="nombre52">DISPONIBLE</div>
+            </div>
+            <div id="espacio53" onclick="notacontra(53)">
+                <div id="nombre53">DISPONIBLE</div>
+            </div>
+            <div id="espacio54" onclick="notacontra(54)">
+                <div id="nombre54">DISPONIBLE</div>
+            </div>
+            <div id="espacio55" onclick="notacontra(55)">
+                <div id="nombre55">DISPONIBLE</div>
+            </div>
+            <div id="espacio56" onclick="notacontra(56)">
+                <div id="nombre56">DISPONIBLE</div>
+            </div>
+            <div id="espacio57" onclick="notacontra(57)">
+                <div id="nombre57">DISPONIBLE</div>
+            </div>
+            <div id="espacio58" onclick="notacontra(58)">
+                <div id="nombre58">DISPONIBLE</div>
+            </div>
+            <div id="espacio59" onclick="notacontra(59)">
+                <div id="nombre59">DISPONIBLE</div>
+            </div>
+            <div id="espacio60" onclick="notacontra(60)">
+                <div id="nombre60">DISPONIBLE</div>
+            </div>
+            <div id="espacio61" onclick="notacontra(57)">
+                <div id="nombre61">DISPONIBLE</div>
+            </div>
+            <div id="espacio62" onclick="notacontra(58)">
+                <div id="nombre62">DISPONIBLE</div>
+            </div>
+            <div id="espacio63" onclick="notacontra(59)">
+                <div id="nombre63">DISPONIBLE</div>
+            </div>
+            <div id="espacio64" onclick="notacontra(60)">
+                <div id="nombre64">DISPONIBLE</div>
+            </div>
+        </div>
+        </div>
+        <div id="semanalnotas">
+            <div id="espacio65" onclick="grabarnota(65)">
+                <div id="nombre65">DISPONIBLE</div>
+            </div>
+            <div id="espacio66" onclick="grabarnota(66)">
+                <div id="nombre66">DISPONIBLE</div>
+            </div>
+            <div id="espacio67" onclick="grabarnota(67)">
+                <div id="nombre67">DISPONIBLE</div>
+            </div>
+            <div id="espacio68" onclick="grabarnota(68)">
+                <div id="nombre68">DISPONIBLE</div>
+            </div>
+            <div id="espacio69" onclick="grabarnota(69)">
+                <div id="nombre69">DISPONIBLE</div>
+            </div>
+            <div id="espacio70" onclick="grabarnota(70)">
+                <div id="nombre70">DISPONIBLE</div>
+            </div>
+            <input type="text" id="inputnota3" placeholder="Primero escribe aqui una nota, luego selecciona en cual recuadro guardar...">
+            <div id="botonverde" onclick="cambiarcolor1()"></div>
+            <div id="botonamarillo" onclick="cambiarcolor2()"></div>
+            <div id="botonrojo" onclick="cambiarcolor3()"></div>
+        </div>
+        <div id="calendario">
+                <div id="dianom">DISPONIBLE</div>
+                <div id="dianum">DISPONIBLE</div>
+        </div>
+        <div id="agenda">
+            <div id="item1" onclick="agendar(1)">
+                <div id="note1"></div>
+                <div id="dias1"></div>
+                <div id="mes1"></div>
+                <div id="an1"></div>
+                <div id="est1"></div>
+            </div>
+            <div id="item2" onclick="agendar(2)">
+                <div id="note2"></div>
+                <div id="dias2"></div>
+                <div id="mes2"></div>
+                <div id="an2"></div>
+                <div id="est2"></div>
+            </div>
+            <div id="item3" onclick="agendar(3)">
+                <div id="note3"></div>
+                <div id="dias3"></div>
+                <div id="mes3"></div>
+                <div id="an3"></div>
+                <div id="est3"></div>
+            </div>
+            <div id="item4" onclick="agendar(4)">
+                <div id="note4"></div>
+                <div id="dias4"></div>
+                <div id="mes4"></div>
+                <div id="an4"></div>
+                <div id="est4"></div>
+            </div>
+            <div id="item5" onclick="agendar(5)">
+                <div id="note5"></div>
+                <div id="dias5"></div>
+                <div id="mes5"></div>
+                <div id="an5"></div>
+                <div id="est5"></div>
+            </div>
+            <div id="item6" onclick="agendar(6)">
+                <div id="note6">d1</div>
+                <div id="dias6">d1</div>
+                <div id="mes6">d2</div>
+                <div id="an6">d3</div>
+                <div id="est6">d3</div>
+            </div>
+            <div id="item7" onclick="agendar(7)">
+                <div id="note7">d1</div>
+                <div id="dias7">d1</div>
+                <div id="mes7">d2</div>
+                <div id="an7">d3</div>
+                <div id="est7">d3</div>
+            </div>
+            <div id="item8" onclick="agendar(8)">
+                <div id="note8">d1</div>
+                <div id="dias8">d1</div>
+                <div id="mes8">d2</div>
+                <div id="an8">d3</div>
+                <div id="est8">d3</div>
+            </div>
+            <div id="item9" onclick="agendar(9)">
+                <div id="note9">d1</div>
+                <div id="dias9">d1</div>
+                <div id="mes9">d2</div>
+                <div id="an9">d3</div>
+                <div id="est9">d3</div>
+            </div>
+            <div id="item10" onclick="agendar(10)">
+                <div id="note10">d1</div>
+                <div id="dias10">d1</div>
+                <div id="mes10">d2</div>
+                <div id="an10">d3</div>
+                <div id="est10">d3</div>
+            </div>
+                <div id="item11">
+                <input type="text" id="inputnota4" placeholder="Primero escribe aqui una nota, luego selecciona en cual recuadro guardar...">
+                <input type="text" id="inputdia" placeholder="Primero escribe aqui una nota, luego selecciona en cual recuadro guardar...">
+                <input type="text" id="inputmes" placeholder="Primero escribe aqui una nota, luego selecciona en cual recuadro guardar...">
+                <input type="text" id="inputanio" placeholder="Primero escribe aqui una nota, luego selecciona en cual recuadro guardar...">
+            </div>
+        </div>
+
+        
+        <script>
+        
+        var today = new Date();
+        var dia1 = today.getDate();
+        var mes = today.getMonth() + 1; // Los meses comienzan desde 0, por lo que sumamos 1
+        var anio = today.getFullYear();
+        var diasSemana = ['DOM', 'LUN', 'MAR', 'MIE', 'JUE', 'VIE', 'SAB'];
+        var nombreDia = diasSemana[today.getDay()]; // Obtener el nombre del día usando el índice del día de la semana
+        var totalfecha = parseInt(dia1 + mes + anio);
+
+        // Mostrar la fecha en los elementos del DOM
+        dianum.textContent = dia1 + "/" + mes + "/" + anio;
+        dianom.textContent = nombreDia;
+
+
+        nota.style.display = "none";
+        nota1.style.display = "none";
+        nota3.style.display = "block";
+        nota4.style.display = "none";
+        semanal.style.display = "block";
+        semanal2.style.display = "none";
+        semanal3.style.display = "none";
+        semanal4.style.display = "none";
+        semanal5.style.display = "none";
+        semanal6.style.display = "none";
+
+        var botonmenu =1;
+
+        function menu(numero) {
+        selectmenu = numero;
+        switch (selectmenu){
+            case 1:
+            semanal.style.display = "block";
+            boton1.style.backgroundColor = "rgb(9, 71, 129)";
+            semanal2.style.display = "none";
+            boton2.style.backgroundColor = "rgb(46, 43, 43)";
+            semanal3.style.display = "none";
+            boton3.style.backgroundColor = "rgb(46, 43, 43)";
+            semanal4.style.display = "none";
+            boton4.style.backgroundColor = "rgb(46, 43, 43)";
+            semanal5.style.display = "none";
+            boton5.style.backgroundColor = "rgb(46, 43, 43)";
+            gestorcontrasena.style.display = "block";
+            semanal6.style.display = "none";
+            nota4.style.display = "none";
+            botonmenu = 1;
+            break;
+            case 2:
+            semanal.style.display = "none";
+            boton1.style.backgroundColor = "rgb(46, 43, 43)";
+            semanal2.style.display = "block";
+            boton2.style.backgroundColor = "rgb(9, 71, 129)";
+            semanal3.style.display = "none";
+            boton3.style.backgroundColor = "rgb(46, 43, 43)";
+            semanal4.style.display = "none";
+            boton4.style.backgroundColor = "rgb(46, 43, 43)";
+            semanal5.style.display = "none";
+            boton5.style.backgroundColor = "rgb(46, 43, 43)";
+            gestorcontrasena.style.display = "block";
+            semanal6.style.display = "none";
+            nota4.style.display = "none";
+            botonmenu = 2;
+            break;
+            case 3:
+            semanal.style.display = "none";
+            boton1.style.backgroundColor = "rgb(46, 43, 43)";
+            semanal2.style.display = "none";
+            boton2.style.backgroundColor = "rgb(46, 43, 43)";
+            semanal3.style.display = "block";
+            boton3.style.backgroundColor = "rgb(9, 71, 129)";
+            semanal4.style.display = "none";
+            boton4.style.backgroundColor = "rgb(46, 43, 43)";
+            semanal5.style.display = "none";
+            boton5.style.backgroundColor = "rgb(46, 43, 43)";
+            gestorcontrasena.style.display = "block";
+            semanal6.style.display = "none";
+            nota4.style.display = "none";
+            botonmenu = 3;
+            break;
+            case 4:
+            semanal.style.display = "none";
+            boton1.style.backgroundColor = "rgb(46, 43, 43)";
+            semanal2.style.display = "none";
+            boton2.style.backgroundColor = "rgb(46, 43, 43)";
+            semanal3.style.display = "none";
+            boton3.style.backgroundColor = "rgb(46, 43, 43)";
+            semanal4.style.display = "block";
+            boton4.style.backgroundColor = "rgb(9, 71, 129)";
+            semanal5.style.display = "none";
+            boton5.style.backgroundColor = "rgb(46, 43, 43)";
+            gestorcontrasena.style.display = "block";
+            semanal6.style.display = "none";
+            nota4.style.display = "none";
+            botonmenu = 4;
+            break;
+            case 5:
+            semanal.style.display = "none";
+            boton1.style.backgroundColor = "rgb(46, 43, 43)";
+            semanal2.style.display = "none";
+            boton2.style.backgroundColor = "rgb(46, 43, 43)";
+            semanal3.style.display = "none";
+            boton3.style.backgroundColor = "rgb(46, 43, 43)";
+            semanal4.style.display = "none";
+            boton4.style.backgroundColor = "rgb(46, 43, 43)";
+            semanal5.style.display = "block";
+            boton5.style.backgroundColor = "rgb(9, 71, 129)";
+            gestorcontrasena.style.display = "block";
+            semanal6.style.display = "none";
+            nota4.style.display = "none"; 
+            botonmenu = 5;
+            break;
+
+        }
+        }
+
+        var totalElementos = 50;
+        for (let i = 1; i <= totalElementos; i++) {
+            var textonombre = localStorage.getItem('miVarNombre' + i) || 'ESPACIO DISPONIBLE';
+            var nombreElemento = document.getElementById('nombre' + i);
+            nombreElemento.textContent = textonombre;
+            if (textonombre === 'ESPACIO DISPONIBLE') {
+                nombreElemento.style.color = 'rgb(9, 71, 129)';
+                nombreElemento.style.fontSize = '10px';
+            }else {
+            nombreElemento.style.color = 'white';
+            nombreElemento.style.fontSize = '20px';
+            }
+        }
+        var totalElementos = 5;
+            for (let i = 1; i <= totalElementos; i++) {
+            var textonombre2 = localStorage.getItem('cambioboton' + i) || 'DISPONIBLE';
+            document.getElementById('botontexto' + i).textContent = textonombre2;
+            }
+
+            for (let i = 65; i <= 70; i++) {
+            document.getElementById('nombre' + i).textContent = localStorage.getItem('minota' + i) || 'DISPONIBLE';
+            var colortarjeta = localStorage.getItem('micolor' + i);
+    
+             // Convertir colortarjeta a un número
+             var colortarjetaNum = parseInt(colortarjeta);
+
+            if (colortarjetaNum === 1) {
+                document.getElementById('nombre' + i).style.backgroundColor = "rgb(16, 70, 21)";
+                document.getElementById('espacio' + i).style.backgroundColor = "rgb(16, 70, 21)";
+            }
+            if (colortarjetaNum === 2) {
+                document.getElementById('nombre' + i).style.backgroundColor = "rgb(108, 114, 31)";
+                document.getElementById('espacio' + i).style.backgroundColor = "rgb(108, 114, 31)";
+            }
+            if (colortarjetaNum === 3) {
+                document.getElementById('nombre' + i).style.backgroundColor = "rgb(65, 16, 16)";
+                document.getElementById('espacio' + i).style.backgroundColor = "rgb(65, 16, 16)";
+            }
+              }
+
+
+              for (let i = 1; i <= 10; i++) {
+                var textonote = localStorage.getItem('vardoc' + i) || 'ESPACIO DISPONIBLE';
+                var textodia = localStorage.getItem('vardia' + i) || '00';
+                var textomes = localStorage.getItem('varmes' + i) || '00';
+                var textoanio = localStorage.getItem('varanio' + i) || '00';
+                var totalfecha2 = parseInt(textodia, 10) + parseInt(textomes, 10) + parseInt(textoanio, 10);
+
+                if (totalfecha === totalfecha2) {
+                    document.getElementById('item' + i).style.backgroundColor = "darkred";
+                } else {
+                    document.getElementById('item' + i).style.backgroundColor = "darkgreen";
+                }
+                document.getElementById('note' + i).textContent = textonote;
+                document.getElementById('dias' + i).textContent = textodia;
+                document.getElementById('mes' + i).textContent = textomes;
+                document.getElementById('an' + i).textContent = textoanio;
+
+            }
+
+
+
+
+        var select=0;
+
+        function alertanota(numero) {
+        select = numero;
+        nota.style.display = "block";
+        }
+        
+        function MODIFICAR() {
+        nota1.style.display = "block";
+        }
+        
+        function guardarEnVariable() {
+            var valor = select;
+            var inputElement = document.getElementById('Inputnombre');
+            var inputElementlink = document.getElementById('Inputlink');
+            var textonombre = inputElement.value;
+            var textolink = inputElementlink.value;
+            localStorage.setItem('miVarNombre' + valor, textonombre);
+            localStorage.setItem('miVarLink' + valor, textolink);
+
+            nota.style.display = "none";
+            reiniciarpagina();
+        }
+
+
+        function IRALINK() {
+        for (let i = 1; i <= select; i++) {
+        var textolink = localStorage.getItem('miVarLink' + i) || '';
+        window.location.href = textolink;
+        }
+        }
+
+        function reiniciarpagina(){
+            window.location.reload();
+          }
+
+        function cambiarbotonmenu(){
+            var valor2 = botonmenu;
+            var inputElement2 = document.getElementById('inputboton3');
+            var textonombre2 = inputElement2.value;
+            localStorage.setItem('cambioboton' + valor2, textonombre2);
+             reiniciarpagina();
+            }
+        
+        function ABRIRGESTOR(){
+            var inputgestor1 = document.getElementById('inputgestor');
+            var CONTRASENA = inputgestor1.value;
+            CONTRASEÑA = 0 ;
+                semanal.style.display = "none";
+                semanal2.style.display = "none";
+                semanal3.style.display = "none";
+                semanal4.style.display = "none";
+                semanal5.style.display = "none"; 
+                semanal6.style.display = "block"; 
+                gestorcontrasena.style.display = "none"; 
+                
+                for (let i = 50; i <= 64; i++) {
+                    var textonombre3 = localStorage.getItem('nombreuser1' + i) || 'DISPONIBLE';
+                    document.getElementById('nombre' + i).textContent = textonombre3;
+                }
+
+
+            }
+        var select1=0;
+
+        function notacontra(numero){
+           select1 = numero;
+           nota4.style.display = "block";
+           document.getElementById('mostnombre').textContent ="ETIQUETA : " + localStorage.getItem('nombreuser1' + numero) || 'DISPONIBLE';
+          document.getElementById('mostusuario').textContent ="USUARIO : " + localStorage.getItem('nombreuser2' + numero) || 'DISPONIBLE';
+           document.getElementById('mostcontra').textContent ="CONTRASEÑA : " + localStorage.getItem('nombreuser3' + numero) || 'DISPONIBLE';    
+        }
+
+
+        function cambiar1() {
+            var valor1 = select1;
+            var input1 = document.getElementById('inputnombre1');
+            var input2 = document.getElementById('inputusuario1');
+            var input3 = document.getElementById('inputcontra1');
+            var guardar1 = input1.value;
+            var guardar2 = input2.value;
+            var guardar3 = input3.value;
+            localStorage.setItem('nombreuser1' + valor1, guardar1);
+            localStorage.setItem('nombreuser2' + valor1, guardar2);
+            localStorage.setItem('nombreuser3' + valor1, guardar3);
+            reiniciarpagina();
+        }
+
+        var numnota2=0;
+        var colorselect=0;
+        function cambiarcolor1(numnota){
+            colorselect=1;
+            
+
+        }
+        function cambiarcolor2(numnota){
+            colorselect=2;
+
+
+        }
+        function cambiarcolor3(numnota){
+            colorselect=3;
+
+        }
+
+        function grabarnota(numnota){
+            var textonotas = document.getElementById('inputnota3');
+            localStorage.setItem('minota' + numnota, textonotas.value);
+            switch(colorselect){
+                case 1:
+                localStorage.setItem('micolor' + numnota, "1");
+                break;
+                case 2:
+                localStorage.setItem('micolor' + numnota, "2");
+                break;
+                case 3:
+                localStorage.setItem('micolor' + numnota, "3");
+                break;
+
+            }
+            reiniciarpagina();
+
+        }
+
+        function agendar(num){
+            var numeroagenda = num;
+            var grabardoc = document.getElementById('inputnota4');
+            var grabardia = document.getElementById('inputdia');
+            var grabarmes = document.getElementById('inputmes');
+            var grabaranio = document.getElementById('inputanio');
+            localStorage.setItem('vardoc' + numeroagenda,grabardoc.value);
+            localStorage.setItem('vardia' + numeroagenda,grabardia.value);
+            localStorage.setItem('varmes' + numeroagenda,grabarmes.value);
+            localStorage.setItem('varanio' + numeroagenda,grabaranio.value);
+            reiniciarpagina();
+
+        }
+        
+
+
+        
+
+        </script>
+
+        </body>
+
+        </html>
